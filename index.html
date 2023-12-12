@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating Image</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000;
+           
+        }
+       
+        .animated-image {
+            width: 100%;
+            height: auto;
+            animation: zoomIn 10s ease infinite;
+           
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size:  50px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 4px 4px 4px rgba(186, 241, 218, 0.5);
+            justify-content: top;
+            font-family: Arial, sans-serif;
+          }
+          .navbar {
+            height: 40px;
+           background-color: transparent rgb(10, 10, 10);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 35px;
+            padding:15px ;
+            box-sizing: border-box;
+          padding-left: 150px;
+            justify-content:right space-evenly;
+            color: #fff;
+          }
+
+        .navbar a{
+          color: aliceblue;
+        padding-left: 30px;
+        margin-top: 20px;
+        }
+      
+
+    </style>
+</head>
+<body>
+ 
+  <div class="image ">
+   
+    <img class="animated-image" src="http://getwallpapers.com/wallpaper/full/d/2/c/255444.jpg" alt="Animated Image">
+    <div class="navbar">
+      
+      
+      <a href="#">Home</a>
+     <a href="#">Login</a>
+     <a href="#">Sign Up</a>
+      <a href="#">Q n A</a>
+      <a href="#">Brain Burst</a>
+      <a href="#">Cosmic Art Gallery</a>
+      <a href="#">Astral Affair</a>
+      <a href="#">Universa</a>
+      <a href="#">Insight Initiative</a>
+    </div>
+    </div>
+    <div class="overlay-text">Space Port</div>
+   
+  </div>
+</body>
+</html>
