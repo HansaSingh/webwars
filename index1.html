@@ -301,31 +301,31 @@
         var element = document.body;
         element.dataset.bsTheme = element.dataset.bsTheme == "light" ? "dark" : "light";
 
-        // Save user preference
+       
         localStorage.setItem('theme', element.dataset.bsTheme);
     }
 </script>
-<!-- ... (your existing HTML) ... -->
+
 
 <script>
   function setTextColorToWhite() {
-      // Select carousel captions
+     
       var carouselCaptions = document.querySelectorAll('.carousel-caption');
 
-      // Set text color to white for each carousel caption
+     
       carouselCaptions.forEach(function (caption) {
           caption.style.color = 'white';
       });
 
-      // Select carousel control buttons
+    
       var carouselControlButtons = document.querySelectorAll('.carousel-control-prev, .carousel-control-next');
 
-      // Set text color to white for each carousel control button
+      
       carouselControlButtons.forEach(function (button) {
           button.style.color = 'white';
       });
 
-      // Select carousel indicators
+    
       var carouselIndicators = document.querySelectorAll('.carousel-indicators button');
 
       // Set text color to white for each carousel indicator
@@ -333,14 +333,14 @@
           indicator.style.backgroundColor = 'white'; // Background color can be set to white
       });
 
-      // Optionally, you can set the text color for other elements as needed.
+     
   }
 
-  // Call the function when the window has finished loading
+
   window.onload = setTextColorToWhite;
 </script>
 
-<!-- ... (rest of your HTML) ... -->
+
 
 </body>
 </html>
